@@ -15,6 +15,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+// this line is changed - it has to appear on GitHub
 
 public class MainActivity extends ActionBarActivity {
 
