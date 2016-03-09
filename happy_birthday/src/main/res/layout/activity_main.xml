@@ -5,11 +5,32 @@
     android:layout_height="match_parent"
     tools:context="com.shaula.igor.happy_birthday.MainActivity">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/backgroundPicture"
+        android:scaleType="centerCrop"
+        android:src="@drawable/androidparty" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/size_16"
+        android:fontFamily="sans-serif-light"
         android:text="@string/happyBirthday"
-        android:textAppearance="@android:style/TextAppearance.DeviceDefault" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/size_16"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/fromAndroidWorld"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white" />
 
 </RelativeLayout>
