@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">Google Maps</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="map">Map</string>
+    <string name="satellite">Satellite</string>
+    <string name="hybrid">Hybrid</string>
+    <string name="terrain">Terrain</string>
+    <string name="goToNextLocation">Go to next location</string>
+
+</resources>

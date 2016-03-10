@@ -1,1 +1,1 @@
-include ':app', ':happy_birthday'
+include ':app', ':happy_birthday', ':google_maps'
