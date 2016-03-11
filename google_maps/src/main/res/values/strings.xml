@@ -7,5 +7,6 @@
     <string name="hybrid">Hybrid</string>
     <string name="terrain">Terrain</string>
     <string name="goToNextLocation">Go to next location</string>
+    <string name="goToGrandCanyon">Go to Grand Canyon</string>
 
 </resources>

@@ -20,6 +20,15 @@
     <!--com.google.android.gms.maps.MapFragment-->
 
     <Button
+        android:id="@+id/bGoToStreetView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/goToGrandCanyon"
+        android:textAllCaps="false" />
+
+    <Button
         android:id="@+id/bGoToNextLocation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
