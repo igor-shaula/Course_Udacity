@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity implements
         GoogleApiClient.OnConnectionFailedListener {
 
     private GoogleMap googleMap;
-
     private boolean isMapReady;
 
     private LatLng locationNext = new LatLng(40.75, -74.0); // a very little shift \

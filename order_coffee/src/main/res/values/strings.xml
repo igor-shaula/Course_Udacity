@@ -6,5 +6,9 @@
     <string name="count">Count</string>
     <string name="zero">0</string>
     <string name="price">Price</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="initialQuantity">2</string>
+    <string name="initialPrice">10</string>
 
 </resources>
