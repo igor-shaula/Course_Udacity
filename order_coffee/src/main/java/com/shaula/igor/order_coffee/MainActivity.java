@@ -10,37 +10,45 @@ import java.text.NumberFormat;
 public class MainActivity extends AppCompatActivity {
 
     private int numberOfCoffees = 2;
+    int pricePerCup = 5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-    }
-
-    public void submitOrder(View view) {
-        int price = 5;
-        display(numberOfCoffees);
-        displayPrice(numberOfCoffees * price);
-    }
-
-    private void display(int number) {
-        TextView tvQuantity = (TextView) findViewById(R.id.tvCount);
-        tvQuantity.setText(String.valueOf(number));
-    }
-
-    public void displayPrice(int number) {
-        TextView textView = (TextView) findViewById(R.id.tvPrice);
-        textView.setText(NumberFormat.getCurrencyInstance().format(number));
     }
 
     public void increment(View view) {
         numberOfCoffees++;
-        display(numberOfCoffees);
+        displayQuantity(numberOfCoffees);
     }
 
     public void decrement(View view) {
         numberOfCoffees--;
-        display(numberOfCoffees);
+        displayQuantity(numberOfCoffees);
+    }
+
+    private void displayQuantity(int number) {
+        TextView tvQuantity = (TextView) findViewById(R.id.tvCount);
+        tvQuantity.setText(String.valueOf(number));
+    }
+
+    public void submitOrder(View view) {
+        displayQuantity(numberOfCoffees);
+        TextView tvPrice = (TextView) findViewById(R.id.tvOrderSummary);
+        tvPrice.setText(createOrderSummary());
+    }
+
+    private int calculatePrice() {
+        return numberOfCoffees * pricePerCup;
+    }
+
+    public String createOrderSummary() {
+        String localizedPrice = NumberFormat.getCurrencyInstance().format(calculatePrice());
+        return "Name: Captain Kunal"
+                + "\nQuantity: "
+                + numberOfCoffees
+                + "\nTotal: "
+                + localizedPrice;
     }
 }

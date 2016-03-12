@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:padding="16dp">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:context="com.shaula.igor.basketball_counter.MainActivity">
+
+            <TextView
+                android:id="@+id/tvNameTeamA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/teamNameA"
+                android:fontFamily="sans-serif-medium"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/tvCountTeamA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp"
+                android:text="@string/zero"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="56sp" />
+
+            <Button
+                android:id="@+id/bPlus3A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="plus3A"
+                android:singleLine="true"
+                android:text="@string/plus3"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bPlus2A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="plus2A"
+                android:singleLine="true"
+                android:text="@string/plus2"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bPlus1A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="plus1A"
+                android:singleLine="true"
+                android:text="@string/plus1"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:context="com.shaula.igor.basketball_counter.MainActivity">
+
+            <TextView
+                android:id="@+id/tvNameTeamB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/teamNameB"
+                android:fontFamily="sans-serif-medium"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/tvCountTeamB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp"
+                android:text="@string/zero"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="56sp" />
+
+            <Button
+                android:id="@+id/bPlus3B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="plus3B"
+                android:singleLine="true"
+                android:text="@string/plus3"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bPlus2B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="plus2B"
+                android:singleLine="true"
+                android:text="@string/plus2"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bPlus1B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="plus1B"
+                android:singleLine="true"
+                android:text="@string/plus1"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llMain"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:onClick="resetScore"
+        android:text="@string/reset" />
+
+</RelativeLayout>
