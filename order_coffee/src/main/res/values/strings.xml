@@ -6,9 +6,23 @@
     <string name="count">Count</string>
     <string name="zero">0</string>
     <string name="orderSummary">Order Summary</string>
-    <string name="plus">+</string>
-    <string name="minus">-</string>
+    <string name="plusOne">+1</string>
+    <string name="minusOne">-1</string>
     <string name="initialQuantity">2</string>
-    <string name="initialPrice">10</string>
+    <string name="initialPrice">$10</string>
+    <string name="toppings">Toppings</string>
+    <string name="addCream">Add a cream</string>
+    <string name="addChocolate">Add a chocolate</string>
+    <string name="clientsName">Client\'s Name</string>
+    <string name="plusTen">+10</string>
+    <string name="minusTen">-10</string>
+
+    <string name="toastMore">You can\'t have more than 100 cups in the order.</string>
+    <string name="toastLess">You can\'t have less than 1 cup in the order.</string>
+    <string name="toastNo">No app can handle this intent</string>
+    <string name="coffeeFor">Coffee order for</string>
+    <string name="hasCream">Has cream</string>
+    <string name="hasChocolate">Has chocolate</string>
+    <string name="total">Total</string>
 
 </resources>

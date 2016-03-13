@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Заказ кофе</string>
+
+    <string name="quantity">Количество</string>
+    <string name="count">Счёт</string>
+    <string name="zero">0</string>
+    <string name="orderSummary">Итог заказа</string>
+    <string name="plusOne">+1</string>
+    <string name="minusOne">-1</string>
+    <string name="initialQuantity">2</string>
+    <string name="initialPrice">$10</string>
+    <string name="toppings">Топпинги</string>
+    <string name="addCream">Добавить сливки</string>
+    <string name="addChocolate">Добавить шоколад</string>
+    <string name="clientsName">Имя клиента</string>
+    <string name="plusTen">+10</string>
+    <string name="minusTen">-10</string>
+
+    <string name="toastMore">В одном заказе не может быть более 100 чашек кофе</string>
+    <string name="toastLess">В одном заказе не может быть менее одной чашки кофе</string>
+    <string name="toastNo">На устройстве отсутствуют приложения для отправки почты</string>
+    <string name="coffeeFor">Заказ кофе для</string>
+    <string name="hasCream">Добавлены сливки</string>
+    <string name="hasChocolate">Добавлен шоколад</string>
+    <string name="total">Итого</string>
+
+</resources>
