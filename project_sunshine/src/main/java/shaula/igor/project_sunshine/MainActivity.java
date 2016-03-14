@@ -1,23 +1,15 @@
-package shaula.igor.udacity_l1;
+package shaula.igor.project_sunshine;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
-// this line is changed - it has to appear on GitHub
-
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +21,6 @@ public class MainActivity extends ActionBarActivity {
                     .commit();
         }
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -59,47 +50,12 @@ public class MainActivity extends ActionBarActivity {
     public static class PlaceholderFragment extends Fragment {
 
         public PlaceholderFragment() {
-
         }
 
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
-/*
-            ArrayList<String> days = new ArrayList<String>();
-
-            days.add("beforeDay, hidden");
-            days.add("Monday, fine");
-            days.add("Tuesday, fine");
-            days.add("Wednesday, fine");
-            days.add("Thursday, fine");
-            days.add("Friday, fine");
-            days.add("Saturday, fine");
-            days.add("Sunday, fine");
-            days.add("afterDay, hidden");
-*/
-            String[] dayStrings = {
-                    "beforeDay, hidden",
-                    "Monday, fine",
-                    "Tuesday, fine",
-                    "Wednesday, fine",
-                    "Thursday, fine",
-                    "Friday, fine",
-                    "Saturday, fine",
-                    "Sunday, fine",
-                    "afterDay, hidden"
-            };
-
-            // List<String> weekForecast = new ArrayList<String>(Arrays.asList(dayStrings));
-
-            ArrayAdapter<String> AA = new ArrayAdapter<String>(getActivity(), R.layout.list_item_forecast, R.id.list_item_forecast_textView, dayStrings);
-            // ArrayAdapter<String> AA = new ArrayAdapter<String>(getActivity(), R.layout.list_item_forecast, R.id.list_item_forecast_textView, weekForecast);
-
-            ListView listView = (ListView) rootView.findViewById(R.id.listView_forecast);
-            listView.setAdapter(AA);
-
             return rootView;
         }
     }

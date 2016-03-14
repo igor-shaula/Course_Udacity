@@ -1,4 +1,4 @@
-package shaula.igor.udacity_l1;
+package shaula.igor.project_sunshine;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

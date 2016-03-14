@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Udacity_L1</string>
+    <string name="app_name">Sunshine</string>
     <string name="action_settings">Settings</string>
 
     <string name="today">Today is</string>
@@ -7,5 +7,7 @@
     <string name="degrees">21 *C</string>
     <string name="dayOfTheWeek">Wednesday</string>
     <string name="current_weather">something pleasant</string>
+
+    <string name="hello_world">Hello world!</string>
 
 </resources>
