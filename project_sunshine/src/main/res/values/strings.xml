@@ -4,10 +4,20 @@
 
     <string name="today">Today is</string>
     <string name="temperature">Temperature:</string>
-    <string name="degrees">21 *C</string>
-    <string name="dayOfTheWeek">Wednesday</string>
-    <string name="current_weather">something pleasant</string>
+    <string name="degrees">-00 *C</string>
+    <string name="dayOfTheWeek">Someday</string>
+    <string name="currentWeather">something pleasant</string>
 
-    <string name="hello_world">Hello world!</string>
+    <string name="imageForTheWeather">image for the weather</string>
+
+    <string-array name="week">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
 
 </resources>
