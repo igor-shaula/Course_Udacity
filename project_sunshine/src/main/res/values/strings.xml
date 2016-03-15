@@ -20,4 +20,6 @@
         <item>Sunday</item>
     </string-array>
 
+    <string name="apiKey">625d8eee94f91c38eb09955b40b7de73</string>
+
 </resources>

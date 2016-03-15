@@ -8,6 +8,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,7 +21,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction()
+            getSupportFragmentManager()
+                    .beginTransaction()
                     .add(R.id.container, new PlaceholderFragment())
                     .commit();
         }
@@ -56,6 +62,23 @@ public class MainActivity extends AppCompatActivity {
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+
+            String[] weatherArray = {
+                    getResources().getStringArray(R.array.week)[0] + " - Cloudy, 4`C",
+                    getResources().getStringArray(R.array.week)[1] + " - Cloudy, 5`C",
+                    getResources().getStringArray(R.array.week)[2] + " - Cloudy, 6`C",
+                    getResources().getStringArray(R.array.week)[3] + " - Cloudy, 7`C",
+                    getResources().getStringArray(R.array.week)[4] + " - Cloudy, 8`C",
+                    getResources().getStringArray(R.array.week)[5] + " - Sunny, 9`C",
+                    getResources().getStringArray(R.array.week)[6] + " - Sunny, 0`C"
+            };
+            ArrayList<String> weatherList = new ArrayList<>(Arrays.asList(weatherArray));
+
+            ArrayAdapter<String> weatherListAdapter = new ArrayAdapter<>(getContext(), R.layout.list_item_forecast_tv, R.id.tvSingle, weatherList);
+
+            ListView lvForecast = (ListView) rootView.findViewById(R.id.lvForecast);
+            lvForecast.setAdapter(weatherListAdapter);
+
             return rootView;
         }
     }
