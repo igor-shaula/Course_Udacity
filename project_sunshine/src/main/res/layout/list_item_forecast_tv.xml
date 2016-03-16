@@ -3,4 +3,4 @@
 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/tvSingle"
     style="@style/MyTextBig"
-    android:text="@string/action_settings" />
+    android:text="@string/actionSettings" />
