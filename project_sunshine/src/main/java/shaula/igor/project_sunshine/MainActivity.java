@@ -3,8 +3,6 @@ package shaula.igor.project_sunshine;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Menu;
-import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,16 +11,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         if (savedInstanceState == null) {
-            getSupportFragmentManager()
-                    .beginTransaction()
+            getSupportFragmentManager().beginTransaction()
                     .add(R.id.container, new ForecastFragment())
                     .commit();
         }
     }
+<<<<<<< HEAD
 
 /*
     // MENU ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
+=======
+/*
+>>>>>>> 255602b713dfbc7719f746347c5903e66ff147a0
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -38,7 +39,11 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
+<<<<<<< HEAD
         if (id == R.id.actionRefresh) {
+=======
+        if (id == R.id.actionGetData) {
+>>>>>>> 255602b713dfbc7719f746347c5903e66ff147a0
             return true;
         }
 

@@ -9,14 +9,9 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
-<<<<<<< HEAD
-        <activity
-            android:name="shaula.igor.project_sunshine.MainActivity"
-=======
 
         <activity
             android:name=".MainActivity"
->>>>>>> 255602b713dfbc7719f746347c5903e66ff147a0
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -4,9 +4,21 @@
     tools:context=".MainActivity">
 
     <item
+<<<<<<< HEAD
         android:id="@+id/actionRefresh"
         android:orderInCategory="100"
         android:title="@string/actionRefresh"
+=======
+        android:id="@+id/actionGetData"
+        android:orderInCategory="100"
+        android:title="@string/actionGetData"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/settings"
+        android:orderInCategory="100"
+        android:title="@string/actionSettings"
+>>>>>>> 255602b713dfbc7719f746347c5903e66ff147a0
         app:showAsAction="ifRoom" />
 
 </menu>
