@@ -41,7 +41,7 @@ public class DetailsActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.settings) {
-            startActivity(new Intent(DetailsActivity.this, SettingsActivity.class));
+            startActivity(new Intent(this, SettingsActivity.class));
             // for startActivityResult ?
             return true;
         }
@@ -64,9 +64,9 @@ public class DetailsActivity extends AppCompatActivity {
             View rootView = inflater.inflate(R.layout.fragment_detail, container, false);
 
             TextView tvInfoFromList = (TextView) rootView.findViewById(R.id.tvInfoFromList);
-            Intent detailsIntent = getActivity().getIntent();
-            if (detailsIntent != null && detailsIntent.hasExtra(Intent.EXTRA_TEXT))
-                tvInfoFromList.setText(detailsIntent.getStringExtra(Intent.EXTRA_TEXT));
+            Intent receivedIntent = getActivity().getIntent();
+            String receivedString = receivedIntent.getStringExtra(Intent.EXTRA_TEXT);
+            tvInfoFromList.setText(receivedString);
 
             return rootView;
         }

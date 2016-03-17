@@ -24,7 +24,8 @@ public class SettingsActivity extends PreferenceActivity
         addPreferencesFromResource(R.xml.preferences);
         // For all preferences, attach an OnPreferenceChangeListener so the UI summary can be
         // updated when the preference changes.
-        bindPreferenceSummaryToValue(findPreference(getString(R.string.defaultLocation)));    }
+        bindPreferenceSummaryToValue(findPreference(getString(R.string.locationKey)));
+    }
 
     /**
      * Attaches a listener so the summary is always updated with the preference value.
@@ -33,7 +34,7 @@ public class SettingsActivity extends PreferenceActivity
      */
     private void bindPreferenceSummaryToValue(Preference preference) {
         // Set the listener to watch for value changes.
-        preference.setOnPreferenceChangeListener(this); // NullPointerException
+        preference.setOnPreferenceChangeListener(this);
 
         // Trigger the listener immediately with the preference's
         // current value.
@@ -56,9 +57,11 @@ public class SettingsActivity extends PreferenceActivity
                 preference.setSummary(listPreference.getEntries()[prefIndex]);
             }
         } else {
+            // TODO: 17.03.2016 continue with setting of shared preferences - may be here \
             // For other preferences, set the summary to the value's simple string representation.
             preference.setSummary(stringValue);
         }
         return true;
     }
+
 }
