@@ -16,14 +16,10 @@ public class MainActivity extends AppCompatActivity {
                     .commit();
         }
     }
-<<<<<<< HEAD
 
 /*
     // MENU ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
-=======
-/*
->>>>>>> 255602b713dfbc7719f746347c5903e66ff147a0
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -39,11 +35,8 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-<<<<<<< HEAD
-        if (id == R.id.actionRefresh) {
-=======
+
         if (id == R.id.actionGetData) {
->>>>>>> 255602b713dfbc7719f746347c5903e66ff147a0
             return true;
         }
 

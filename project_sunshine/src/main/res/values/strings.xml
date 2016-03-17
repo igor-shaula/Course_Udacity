@@ -1,10 +1,8 @@
 <resources>
+
     <string name="app_name">Sunshine</string>
-<<<<<<< HEAD
     <string name="actionRefresh">Refresh</string>
-=======
     <string name="actionSettings">Settings</string>
->>>>>>> 255602b713dfbc7719f746347c5903e66ff147a0
 
     <string name="today">Today is</string>
     <string name="temperature">Temperature:</string>
