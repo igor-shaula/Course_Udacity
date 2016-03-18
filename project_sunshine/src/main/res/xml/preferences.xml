@@ -5,26 +5,26 @@
     android:layout_height="match_parent">
 
     <EditTextPreference
-        android:defaultValue="@string/defaultLocation"
+        android:defaultValue="@string/defaultLocationCode"
         android:inputType="text"
         android:key="@string/locationKey"
         android:singleLine="true"
         android:title="@string/locationTitle" />
 
     <!--
-        <CheckBoxPreference
-        android:key="pref_sync"
-        android:title="@string/pref_sync"
-        android:summary="@string/pref_sync_summ"
-        android:defaultValue="true" />
+            <CheckBoxPreference
+            android:key="pref_sync"
+            android:title="@string/pref_sync"
+            android:summary="@string/pref_sync_summ"
+            android:defaultValue="true" />
+    -->
+
     <ListPreference
-        android:dependency="pref_sync"
-        android:key="pref_syncConnectionType"
-        android:title="@string/pref_syncConnectionType"
-        android:dialogTitle="@string/pref_syncConnectionType"
+        android:defaultValue="@string/defaultMeasurementUnit"
+        android:dialogTitle="@string/measurementTitle"
         android:entries="@array/pref_syncConnectionTypes_entries"
         android:entryValues="@array/pref_syncConnectionTypes_values"
-        android:defaultValue="@string/pref_syncConnectionTypes_default" />
-        -->
+        android:key="@string/measurementKey"
+        android:title="@string/measurementTitle" />
 
 </PreferenceScreen>

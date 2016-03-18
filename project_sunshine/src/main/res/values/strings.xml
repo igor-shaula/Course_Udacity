@@ -1,8 +1,6 @@
 <resources>
 
     <string name="app_name">Sunshine</string>
-    <string name="actionRefresh">Refresh</string>
-    <string name="settings">Settings</string>
     <string name="details">Details</string>
 
     <string name="today">Today is</string>
@@ -24,13 +22,36 @@
     </string-array>
 
     <string name="apiKey">625d8eee94f91c38eb09955b40b7de73</string>
+    
+    <!-- menu actions -->
     <string name="actionGetData">Get Data!</string>
+    <string name="settings">Settings</string>
+    <string name="share">Share</string>
 
     <string name="locationKey" translatable="false">location</string>
-    <string name="defaultLocation" translatable="false">94043</string>
+    <string name="defaultLocationCode" translatable="false">04080</string>
     <string name="locationTitle">set location here</string>
+
+    <string name="measurementKey" translatable="false">unitOfMeasurement</string>
+    <string name="defaultMeasurementUnit" translatable="false">metric</string>
+    <string name="alternativeMeasurementUnit" translatable="false">imperial</string>
+    <string name="measurementTitle">Set unit of measurement</string>
 
     <!--http://api.openweathermap.org/data/2.5/forecast/daily?q=Kiev&mode=json&units=metric&cnt=7&APPID=625d8eee94f91c38eb09955b40b7de73-->
     <!--http://api.openweathermap.org/data/2.5/forecast/daily?id=94043&mode=json&units=metric&cnt=7&APPID=625d8eee94f91c38eb09955b40b7de73-->
+
+    <string name="pref_syncConnectionTypes_entries">pref_syncConnectionTypes_entries</string>
+
+    <string-array name="pref_syncConnectionTypes_entries">
+        <item>metricEntry</item>
+        <item>imperialEntry</item>
+    </string-array>
+
+    <string-array name="pref_syncConnectionTypes_values">
+        <item>metric</item>
+        <item>imperial</item>
+    </string-array>
+
+    <string name="preferedLocation">preferedLocation</string>
 
 </resources>

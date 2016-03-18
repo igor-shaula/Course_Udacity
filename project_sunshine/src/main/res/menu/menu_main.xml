@@ -11,8 +11,14 @@
 
     <item
         android:id="@+id/settings"
-        android:orderInCategory="100"
+        android:orderInCategory="101"
         android:title="@string/settings"
         app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/preferedLocation"
+        android:orderInCategory="102"
+        android:title="@string/preferedLocation"
+        app:showAsAction="never" />
 
 </menu>
