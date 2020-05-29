@@ -1,11 +1,11 @@
 package com.shaula.igor.basketball_counter;
 
+import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
     private int scoreTeamA, scoreTeamB, pricePerCup = 5;
     private TextView tvCountTeamA, tvCountTeamB;
