@@ -1,1 +1,1 @@
-include ':project_sunshine', ':happy_birthday', ':google_maps', ':order_coffee', ':basketball_counter', ':_test'
+include ':project_sunshine', ':happy_birthday', ':google_maps', ':order_coffee', ':basketball_counter'
